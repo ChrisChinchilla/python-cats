@@ -7,7 +7,7 @@ for num in range(0,100):
     try:
         response = urlopen(request)
         random_cat = response.read()
-        print random_cat
+        print (random_cat)
     except URLError, e:
         print 'Got an error code:', e
     time.sleep(2)
